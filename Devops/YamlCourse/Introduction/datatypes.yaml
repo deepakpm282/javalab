@@ -1,0 +1,39 @@
+#string variables
+myself: Deepak #this is the syntax for variable.(variable name: (space is compulsory)name)
+fruit: "mango"
+job: 'software engineer'
+
+# write a single line,line in multiple lines
+bio: |
+ Hey iam Deepak pm.
+ iam 20 years old.
+ 
+messages: >
+ Hey iam Deepak pm
+ iam 20 years old.
+#this will be same as
+message: hey iam Deepak pm iam 20 years old.
+
+number: 9895450330
+marks: 78.90
+booleanValues: No #n,N,false,False.
+#same for true -->y,Y,yes,YES
+
+#specify the type -
+Zero: !!int 45
+positiveNUmber: !!int 56
+negativeNumber: !!int -34
+binarNumber: !!int 0
+octalNumber: !!int 06574
+
+#floating point NUmbers 
+mark: !!float 56.98
+infintes: !!float .inf
+not a anum: .nan
+
+#null 
+surname: !!null Null #or null NULL ~
+~: this is a null key
+
+#dates and time in YAML
+date: !!timestamp 2022-10-31

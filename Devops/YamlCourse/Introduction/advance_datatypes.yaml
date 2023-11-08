@@ -1,0 +1,59 @@
+students: !!seq
+ - marks
+ - name
+ - roll_no
+
+ # like this also
+student: !!seq [marks,name,roll_no] 
+
+#some of the keys of the sequence be empty _know as sparse sequence
+
+sparse seq: 
+ - hey
+ - how
+ - 
+ - who
+ - null
+
+---
+
+#nested sequence
+-
+ - mango
+ - apple
+ - banana
+-
+ - marks
+ - subject
+ - exam
+
+---
+
+# key: value pairs are maps
+ !!map
+
+ name: Deepak pm
+ class: bca
+ roll_no: 32
+#same as 
+ name1: Deepak 
+ role: { age: 78,job: develaper}
+---
+#pairs having duplicate value
+#!!pairs
+pair example: !!pairs
+ - job: teacher
+ - job: student
+#this will be an array of hash tables 
+
+#to set unique values
+names: !!set
+ ? deepak
+ ? kunal
+ ? roopchand
+
+#dictionary !!omap
+ people: !!omap
+  - deepak
+  
+   - name: Deepak p
